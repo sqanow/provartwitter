@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase>
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: myTwitterSandbox (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">myTwitterSandbox</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">myTwitterSandbox</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="SourceData" variableScope="Test">
+          <cacheToken>/Users/jlai/Provar/Workspace2/Twitter_SFDC/templates/ExcelData.xlsx;1571371054000</cacheToken>
+          <cachedParameters>
+            <apiParam name="Stage"/>
+            <apiParam name="Probability"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" created="0" namesLocation="FirstRowOfRange" updated="0" whereComparison="EqualTo" whereName="Stage">
+            <workbookPath class="value" valueClass="string">templates/ExcelData.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string"/>
+            <valuesRange class="value" valueClass="string"/>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+    </apiCall>
+  </steps>
+</testCase>
